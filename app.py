@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title of the app
-st.title("Simple Streamlit App c1")
+st.title("Streamlit App Deployed to Azure App Service")
 
 # Input text
 name = st.text_input("Enter your name:")
