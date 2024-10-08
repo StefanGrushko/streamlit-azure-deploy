@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     
     steps:
@@ -65,5 +65,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'streamlit-deploy-test'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_3bddd725f2c3423b8184cf5bdffd9717 }}
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B50A48CD42D94C03A1FA5D47792C60AB }}
